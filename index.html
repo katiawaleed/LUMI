@@ -14,7 +14,7 @@
       <div class="wallet-details">
         <div class="detail">
           <span class="label">Wallet Name:</span>
-          <span class="value">OLENA KANDYBE</span>
+          <span class="value">OLENA KANDYBA</span>
         </div>
         <div class="detail">
           <span class="label">Wallet Number:</span>
@@ -22,11 +22,15 @@
         </div>
         <div class="detail">
           <span class="label">Supported Currencies:</span>
-          <span class="value">USD, EUR, GBP, JOD, AED</span>
+          <span class="value">USD, EUR, GBP, AED, JOD</span>
         </div>
       </div>
 
     </div>
+  </div>
+
+  <div class="thank-you">
+    Thank you for supporting us!
   </div>
 
 </body>
@@ -42,9 +46,14 @@
 /* Page background */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
-  background-color: #f7f6f3; /* soft white */
+  background-color: #f9f4e8; /* soft gold */
   color: #1a1a1a;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
 }
 
 /* Center content */
@@ -52,18 +61,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
 }
 
 /* Card */
 .card {
   position: relative;
   background-color: #ffffff;
-  padding: 48px 40px;
-  max-width: 480px;
+  padding: 64px 56px; /* slightly bigger card */
+  max-width: 600px; /* bigger card */
+  width: 100%;
   text-align: left;
   border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.08);
 }
 
 /* Gold corners */
@@ -92,16 +102,16 @@ body {
 
 /* Card title */
 h1 {
-  font-size: 36px;
+  font-size: 42px; /* slightly bigger */
   font-weight: 500;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 /* Wallet details */
 .wallet-details {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   font-size: 16px;
   color: #3a3a3a;
 }
@@ -118,6 +128,15 @@ h1 {
 .detail .value {
   font-weight: 400;
   text-align: right;
+}
+
+/* Thank you message */
+.thank-you {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #ffffff; /* white on gold */
+  font-weight: 500;
+  text-align: center;
 }
 
 </style>
